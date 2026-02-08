@@ -16,3 +16,5 @@ fn main() {
         Err(err) => println!("Error:{} => Value {} is out of range for u8", err, x),
     }
 }
+// Important Safety Note
+// Using as for numeric casting is considered "lossy." Rust will not warn you if the number doesn't fit or if the sign changes; it will just silently truncate the bits.
